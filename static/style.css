@@ -1,0 +1,196 @@
+:root {
+    --verde-claro: #95D186;
+    --verde-escuro: #34492F;
+    --cinza-claro: #F6F6F7;
+    --preto: #0E0E0E;
+    --preto-2: #101010;
+    --preto-3: #131313;
+    --bg-container: #181818;
+    --cinza-escuro: #2F2F2F;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--preto-3);
+    color: var(--preto);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 20px; /* Espaço entre a logo e o chat */
+    margin-top: 20px; /* Espaço superior para não colar no topo */
+}
+
+.logo-container img {
+    max-width: 50px; /* Ajuste para o tamanho desejado */
+    height: auto;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    height: 80vh;
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 10px;
+    background-color: var(--preto-2);
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.chat-box {
+    margin-top: 20px;
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--preto-2);
+    scrollbar-width: thin;
+}
+
+.chat-bubble {
+    margin-left: 20px;
+    max-width: 75%;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.chat-bubble.user {
+    background-color: var(--verde-escuro);
+    color: white;
+    margin-left: auto;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.chat-bubble.bot {
+    background-color: var(--verde-claro);
+    color: var(--preto);
+    margin-right: auto;
+    text-align: left;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-top: 1px solid var(--cinza-escuro);
+    width: 100%;
+    background-color: var(--preto);
+}
+
+.chat-input input {
+    color: white;
+    background-color: var(--bg-container);
+    margin-left: 20px;
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid;
+    border-color: var(--preto);
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chat-input input:hover {
+    border: 1px solid;
+    border-color: var(--verde-escuro);
+}
+
+
+.chat-input input:focus {
+    border: 1px solid;
+    border-color: var(--verde-claro);
+    box-shadow: 0 0 5px rgba(149, 209, 134, 0.3);
+}
+
+.enviar {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid var(--bg-container);
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--bg-container);
+    color: var(--cinza-claro);
+    transition: background-color 0.2s;
+}
+
+.falar {
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--verde-claro);
+    color: var(--preto);
+    transition: background-color 0.2s;
+}
+
+.enviar:hover {
+    background-color: var(--cinza-escuro);
+}
+
+.falar:hover {
+    color: var(--verde-claro);
+    background-color: var(--verde-escuro);
+}
+
+.falar.active {
+    color: var(--verde-claro);
+    background-color: var(--verde-escuro);
+}
+
+.chat-container.active {
+    border-color: var(--verde-claro); 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chat-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    background: var(--cinza-claro);
+    border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background: var(--cinza-escuro);
+    border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+    background: var(--verde-escuro);
+}

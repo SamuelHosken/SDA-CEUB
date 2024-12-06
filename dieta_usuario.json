@@ -1,0 +1,193 @@
+
+
+{
+    "calories": {
+        "daily": 2800,
+        "weekly": 19600,
+        "monthly": 84000
+    },
+    "macronutrients": {
+        "protein": {
+            "grams": 180,
+            "percentage": 26
+        },
+        "carbohydrates": {
+            "grams": 300,
+            "percentage": 43
+        },
+        "fats": {
+            "grams": 80,
+            "percentage": 26
+        },
+        "fiber": 35
+    },
+    "hydration": {
+        "daily": 3.5,
+        "weekly": 24.5,
+        "monthly": 105,
+        "unit": "liters"
+    },
+    "daily_meals": {
+        "weekdays": {
+            "breakfast": {
+                "time": "6:00",
+                "items": [
+                    "5 eggs (whole or 4 whites and 1 whole)",
+                    "3 slices of whole-grain bread",
+                    "1/2 avocado",
+                    "5g creatine with water",
+                    "Black coffee (no sugar)"
+                ],
+                "calories": 600
+            },
+            "pre_workout": {
+                "time": "11:00",
+                "items": [
+                    "1 banana",
+                    "1 scoop whey protein",
+                    "2 tbsp oatmeal"
+                ],
+                "calories": 300
+            },
+            "post_workout": {
+                "time": "13:00",
+                "items": [
+                    "200g lean meat (chicken, turkey, or beef)",
+                    "1 cup rice or sweet potato",
+                    "Steamed vegetables (unlimited)",
+                    "1 tsp olive oil"
+                ],
+                "calories": 700
+            },
+            "afternoon_snack": {
+                "time": "16:00",
+                "items": [
+                    "1 pot of natural yogurt (200g)",
+                    "1 apple",
+                    "10 nuts (cashews, almonds, or walnuts)"
+                ],
+                "calories": 400
+            },
+            "dinner": {
+                "time": "20:00",
+                "items": [
+                    "200g fish or lean meat",
+                    "3/4 cup quinoa or whole-grain rice",
+                    "Unlimited salad (greens, tomatoes, carrots)",
+                    "1 tsp olive oil"
+                ],
+                "calories": 600
+            },
+            "evening_snack": {
+                "time": "22:00",
+                "items": [
+                    "4 tbsp cottage cheese or ricotta",
+                    "15 almonds",
+                    "Chamomile tea (no sugar)"
+                ],
+                "calories": 200
+            }
+        },
+        "weekends": {
+            "adjustments": [
+                "Reduce post-workout carbs (remove rice, replace with more vegetables)",
+                "Skip whey protein in pre-workout",
+                "Add healthy fats (e.g., 1 tbsp peanut butter)"
+            ],
+            "calories": 2400
+        }
+    },
+    "weekly_plan": {
+        "training_days": 3,
+        "total_calories": 19600,
+        "hydration": "24.5 liters"
+    },
+    "monthly_plan": {
+        "training_days": 22,
+        "rest_days": 8,
+        "total_calories": 84000,
+        "hydration": "105 liters"
+    },
+    "additional_notes": [
+        "Follow the plan 90% of the time for flexibility.",
+        "Monitor weight weekly and adjust portions if necessary.",
+        "Train with intensity to maximize muscle retention.",
+        "Consider optional supplementation: Omega-3, multivitamins."
+    ],
+    "food_alternatives": {
+        "proteins": {
+            "substitutes": [
+                "Chicken breast",
+                "Turkey breast",
+                "Egg whites",
+                "Tofu",
+                "Fish (salmon, tilapia, tuna)",
+                "Lean beef cuts (sirloin, patinho)"
+            ],
+            "fast_food_options": [
+                "Grilled chicken sandwich (no mayo)",
+                "Burger with lettuce wrap instead of bun",
+                "Subway grilled chicken salad",
+                "Starbucks egg white & spinach wrap"
+            ]
+        },
+        "carbohydrates": {
+            "substitutes": [
+                "Sweet potato",
+                "Brown rice",
+                "Quinoa",
+                "Oatmeal",
+                "Whole-grain pasta",
+                "Ezekiel bread"
+            ],
+            "fast_food_options": [
+                "Chipotle burrito bowl (no rice, add extra veggies)",
+                "McDonald's oatmeal (skip sugar and cream)",
+                "Starbucks plain bagel (no cream cheese)"
+            ]
+        },
+        "fats": {
+            "substitutes": [
+                "Avocado",
+                "Olive oil",
+                "Coconut oil",
+                "Almond butter",
+                "Chia seeds",
+                "Flaxseeds"
+            ],
+            "fast_food_options": [
+                "Salads with olive oil or vinaigrette (no creamy dressings)",
+                "Avocado toast (whole-grain bread if possible)",
+                "Trail mix (unsweetened, minimal chocolate)"
+            ]
+        },
+        "snacks": {
+            "substitutes": [
+                "Greek yogurt (plain)",
+                "Cottage cheese",
+                "Hard-boiled eggs",
+                "Raw vegetables with hummus",
+                "Rice cakes with peanut butter"
+            ],
+            "fast_food_options": [
+                "Protein bars (low sugar)",
+                "Starbucks protein boxes (egg-based options)",
+                "Small portion of popcorn (air-popped)"
+            ]
+        },
+        "drinks": {
+            "substitutes": [
+                "Water with lemon",
+                "Green tea",
+                "Black coffee (no sugar)",
+                "Coconut water (unsweetened)",
+                "Herbal teas"
+            ],
+            "fast_food_options": [
+                "Unsweetened iced tea",
+                "Americano coffee (no sugar or milk)",
+                "Sparkling water (no added sugar)"
+            ]
+        }
+    }
+}
