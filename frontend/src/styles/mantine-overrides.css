@@ -1,0 +1,7 @@
+/* Overrides mínimos para Geist UI */
+
+/* Remover estilos conflitantes do Mantine */
+.mantine-TextInput-input,
+.mantine-PasswordInput-input {
+  font-family: "Inter", sans-serif !important;
+}
